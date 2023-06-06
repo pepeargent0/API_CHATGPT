@@ -1,9 +1,8 @@
 import logging
 import openai
-from configure.load_env import OpenAPIConfig
 from process.openapi_process import Request
 from process.redis_manager import RedisManager
-
+from configure_env.load_env import OpenAPIConfig
 # Configurar el logger
 logger = logging.getLogger('queue_processor_logger')
 logger.setLevel(logging.INFO)
